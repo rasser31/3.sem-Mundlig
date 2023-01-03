@@ -1,0 +1,132 @@
+@import './variables';
+
+
+.bgcolor{
+    background-color: #5C574A !important;
+}
+
+
+section{
+    h1{
+        font-size: 1.5rem;
+        text-align: center;
+        font-family: futura-pt, sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        color: $fourthColor;
+    }
+    
+
+    hr{
+        border-top: 5px solid $secondaryColor;
+        width: 10vw;
+        padding-top: 5vh;
+    }
+
+    h2{
+        font-size: 3.375rem;
+        text-align: center;
+        font-family: futura-pt, sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        color: $fourthColor;
+    }
+}
+
+main{
+    .flexContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-around;
+    }
+
+    p{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        color: $fourthColor;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    h2{
+        font-size: 1.5rem;
+        text-align: center;
+        font-family: futura-pt, sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        color: $fourthColor;
+    }
+
+    @media only screen and (max-width: 864px){
+        .flexContainer{
+            display: flex;
+            flex-direction: column;
+            
+        }
+    }
+
+    form{
+        .form-control{
+            width: 25rem;
+            background-color: $primaryColor;
+            border-color: $secondaryColor;
+        }
+        .form-control::-webkit-input-placeholder {
+            color: $secondaryColor;
+        }
+
+        .boxSize{
+            resize: vertical;
+           }
+
+        .text{
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+            color: $fourthColor;
+            text-align: center;
+            font-size: 1rem;
+            text-align: left;
+        }
+
+        @media only screen and (max-width: 864px){
+            .form-control{
+                width: 100%;
+            }
+        }
+    }
+}
+
+/*Footer*/
+footer {
+    display: flex !important;
+    background-color: $bgFarve1;
+    color: $fontFarve2;
+    font-family: futura-pt, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    padding: 3rem;
+
+    h4 {
+        padding: 1rem;
+    }
+    h2 {
+        padding: 1rem;
+    }
+}
+
+//SMALL LAPTOP
+@media only screen and (max-width: 1024px) {
+    //Footer til 1024px
+    footer {
+        img {
+            display: none;
+        }
+    }
+}
+
+                    
+                

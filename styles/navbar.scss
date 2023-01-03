@@ -1,0 +1,68 @@
+@import './variables.scss';
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.logoTypo{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 2.25rem;
+}
+
+.navbar-custom {
+    background-color: $primaryColor;
+    padding-bottom: 20px;
+}
+
+.navbarText{
+    font-family: futura-pt, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2rem;
+    color: $secondaryColor;
+}
+
+.navbar-nav {
+    margin-right: auto;
+}
+
+.navbar-nav > li{
+    padding-right:15px;
+  }
+
+.btn-custom {
+    border-color: $secondaryColor !important; 
+    color: $secondaryColor !important;
+}
+
+
+.active{
+    border-color: $secondaryColor !important;
+    background-color: transparent !important;
+    color: $thirdColor !important;
+}
+
+.btn-custom:hover {
+    border-color: $thirdColor !important;
+}
+
+#omOs{
+    white-space: nowrap;
+}
+
+
+@media only screen and (max-width: 766px) {
+    #desktopNav{
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 770px)  {
+    .btn-lg{
+            padding: 2px;
+        }
+}
+ 

@@ -1,0 +1,84 @@
+body {
+  background-color: #E2E2E2;
+  margin: 0;
+  padding: 0;
+}
+body video {
+  position: relative;
+  z-index: 0;
+  height: 85vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .videoOverlay {
+  background-color: rgba(70, 65, 49, 0.86);
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 85vh;
+  padding: 5em;
+  text-align: center;
+  margin-top: 80px;
+}
+body .videoOverlay hr {
+  border-top: 5px solid #FFC718;
+  width: 10vw;
+  padding-top: 5vh;
+}
+body .videoOverlay h3, body .videoOverlay h1 {
+  color: white;
+}
+body .videoOverlay h3 {
+  padding-bottom: 2vh;
+}
+body .videoOverlay button {
+  margin: 0.5vw;
+  margin-top: 30vh;
+  width: 10em;
+  height: 3em;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 0.4em;
+  border: 2px solid #FFC718;
+  color: #FFC718;
+  font-size: 1em;
+}
+body section {
+  background-color: #E2E2E2;
+}
+body section .infoBox {
+  padding: 2vh;
+  padding-left: 15vw;
+  padding-right: 15vw;
+}
+body section .infoBox .triangle {
+  float: left;
+  width: 30em;
+}
+body section .infoBox .triangleInfo {
+  position: relative;
+  list-style: none;
+}
+body section .infoBox .triangleInfo h2, body section .infoBox .triangleInfo li {
+  width: 60vw;
+  padding-left: 30vw;
+  font-size: 1.7em;
+}
+body section .infoBox .triangleInfo h2 {
+  padding-top: 5vh;
+  font-size: 2em;
+}
+body section .infoBox .longTextTitle {
+  padding-top: 7em;
+  text-align: center;
+}
+body section .infoBox .longText {
+  font-family: "Source-sans-Pro, Poppins";
+  font-weight: 600;
+  font-size: 1.2em;
+}
+body section .infoBox h3 {
+  text-align: center;
+  font-family: "Source-sans-Pro, Poppins";
+  font-weight: 600;
+}/*# sourceMappingURL=style.css.map */

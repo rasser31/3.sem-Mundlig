@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenLead | Vedvarende energiinversteringer | Grøn omstilling</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+
+    <!--Navigation bar-->
+    <header>
+        <nav class="navbar navbar-custom justify-content-between ms-auto mx-auto navbar-expand-md container-fluid" style="z-index: 2;"> 
+            <!--Logo-->
+            <a class="navbar-brand" href="#">
+                <img src="img/logo_uden_text.svg" width="50" height="50" class="d-inline-block align-top logoTypo" alt=""> 
+                <div class="d-inline-block logoTypo">GreenLead</div>
+            </a>
+
+            <!--Repsponsive button-->
+            <button class="navbar-toggler btn-custom" type="button" data-toggle="collapse" data-target="#navbarSupport" aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation" onclick="marginExpand()">
+                <span class="navbar-toggler-icon">
+                    <img src="./img/menu.svg" alt="burgermenu">
+                </span>
+            </button>
+            
+            <!--Small screen collapse -  872px-->
+            <div class="collapse navbar-collapse" id="navbarSupport">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                    <a class="nav-link text-center navbarText d-md-none" href="index.html">Forside</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-center navbarText d-md-none" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-center navbarText d-md-none" href="workshop.html">Workshop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center navbarText d-md-none" href="#">Projekter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center navbarText d-md-none" href="#">Om os</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center navbarText d-md-none" href="kontaktOs.html">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--Medium & Large screen-->
+            <form class="form-inline d-sm-none d-md-block d-none d-sm-block" id="desktopNav">
+                <ul class="navbar-nav ml-auto flex-row flex">
+                    <li class="nav-item">
+                        <a href="index.html">
+                            <button class="btn btn-custom btn-lg" type="button">Forside</button>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#">
+                            <button class="btn btn-custom btn-lg" type="button">Services</button>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="workshop.html">
+                            <button class="btn btn-custom active btn-lg" type="button">Workshop</button>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#">
+                            <button class="btn btn-custom btn-lg" type="button">Projekter</button>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#">
+                            <button class="btn btn-custom btn-lg" type="button" id="omOs">Om os</button>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="kontaktOs.html">
+                            <button class="btn btn-custom btn-lg" type="button">Kontakt</button>
+                        </a>
+                    </li>
+                    </ul>
+                </form>
+            </nav>
+    </header>
+
+    <video class="container-fluid" autoplay="autoplay" loop="loop">
+        <source src="./img/frontpage_vid.mp4" type="video/mp4">
+    </video>
+    <div class="videoOverlay container-fluid" id="vidOverlay">
+        <h3>Vi udfører rådgivning inden for:</h3>
+        <hr>
+        <h1>Grøn omstilling. Projektudvikling. Finansiering.</h1>
+
+        <button>Workshop</button>
+        <button>Kontakt</button>
+    </div>
+    <section class="container-fluid">
+        <div class="infoBox">
+            <img src="./img/trekant.svg" alt="Trekant" class="triangle">
+            <ul class="triangleInfo">
+                <h2>Vi udfører rådgivning indenfor:</h2>
+                <li>- Teknologien omkring grøn omstilling</li>
+                <li>- Økonom-teknisk udvikling</li>
+                <li>- Match af projekter med investorer</li>
+            </ul>
+            <h2 class="longTextTitle">Greenlead - Rådgivning i grønomstilling</h2>
+            <p class="longText">GreenLead er en virksomhed der er specialiseret i at gøre grønne visioner til virkelighed, dels i samarbejdet med investorer samt også i samarbejdet med industrien i omstillingen over til grøn energi. <br> <br>
+                ​GreenLead rådgiver i vedvarende energisystemer og vedvarende energiinvesteringer – Vi har en stor portefølje af projekter samt et bredt netværk af investorer - vi arbejder ofte i ”vakuummet” mellem finansiering og projektet. Vi er specialiseret i at designe grønne projekter og beskrive projektet for investorer samt at finde de korrekte projekter til den rette investor. Det vil sige at gøre den grønne omstilling til virkelighed. <br> <br>
+                ​Har din virksomhed en vision om grøn omstilling og har du brug for hjælp til at få visionen konverteret til en handlingsplan? Eller mangler du eksperter som kan guide jer de bedste grønne investeringer på markedet? <br> <br>
+                ​Så er GreenLead i stand til at hjælpe dig. Vi har over de sidste 10 år arbejdet med netop det spændingsfelt, lige fra vindmøller, arktisk vandkraft, energilagring, waste-to-energy, solceller, og energioptimering af anlæg. Vores projekter spænder fra mindre projekter til omkring 1 mio. kr. til projekter op til 3 mia. kr. 
+            </p>
+            <h3>Lad os hjælpe dig og din virksomhed</h3>
+            
+        </div>
+    </section>
+
+    <script>
+        var x = 0;
+        function marginExpand(){
+            if(x == 0){
+                document.getElementById("vidOverlay").style.marginTop="464px";
+                x = 1;
+            } else {
+                document.getElementById("vidOverlay").style.marginTop="80px"
+                x = 0;
+            }
+        }
+    </script>
+</body>
+</html>

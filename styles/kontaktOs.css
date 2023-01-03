@@ -1,0 +1,102 @@
+.bgcolor {
+  background-color: #5C574A !important;
+}
+
+section h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: futura-pt, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #FFFFFF;
+}
+section hr {
+  border-top: 5px solid #FFC718;
+  width: 10vw;
+  padding-top: 5vh;
+}
+section h2 {
+  font-size: 3.375rem;
+  text-align: center;
+  font-family: futura-pt, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #FFFFFF;
+}
+
+main .flexContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+}
+main p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1rem;
+}
+main h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: futura-pt, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #FFFFFF;
+}
+@media only screen and (max-width: 864px) {
+  main .flexContainer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+main form .form-control {
+  width: 25rem;
+  background-color: #464131;
+  border-color: #FFC718;
+}
+main form .form-control::-webkit-input-placeholder {
+  color: #FFC718;
+}
+main form .boxSize {
+  resize: vertical;
+}
+main form .text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1rem;
+  text-align: left;
+}
+@media only screen and (max-width: 864px) {
+  main form .form-control {
+    width: 100%;
+  }
+}
+
+/*Footer*/
+footer {
+  display: flex !important;
+  background-color: #464131;
+  color: #fff;
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 3rem;
+}
+footer h4 {
+  padding: 1rem;
+}
+footer h2 {
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  footer img {
+    display: none;
+  }
+}/*# sourceMappingURL=kontaktOs.css.map */

@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.logoTypo {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: white;
+  font-size: 2.25rem;
+}
+
+.navbar-custom {
+  background-color: #464131;
+  padding-bottom: 20px;
+}
+
+.navbarText {
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2rem;
+  color: #FFC718;
+}
+
+.navbar-nav {
+  margin-right: auto;
+}
+
+.navbar-nav > li {
+  padding-right: 15px;
+}
+
+.btn-custom {
+  border-color: #FFC718 !important;
+  color: #FFC718 !important;
+}
+
+.active {
+  border-color: #FFC718 !important;
+  background-color: transparent !important;
+  color: #00AC05 !important;
+}
+
+.btn-custom:hover {
+  border-color: #00AC05 !important;
+}
+
+#omOs {
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: 766px) {
+  #desktopNav {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 1100px) and (min-width: 770px) {
+  .btn-lg {
+    padding: 2px;
+  }
+}/*# sourceMappingURL=navbar.css.map */
