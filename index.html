@@ -106,17 +106,25 @@
             </nav>
     </header>
 
+    <!--VIDEO & Frontpage-->
+
     <video class="container-fluid" autoplay="autoplay" loop="loop">
         <source src="./img/frontpage_vid.mp4" type="video/mp4">
     </video>
     <div class="videoOverlay container-fluid" id="vidOverlay">
-        <h3>Vi udfører rådgivning inden for:</h3>
+        <p>Vi udfører rådgivning inden for:</p>
         <hr>
         <h1>Grøn omstilling. Projektudvikling. Finansiering.</h1>
 
-        <button>Workshop</button>
-        <button>Kontakt</button>
+        <a href="workshop.html">
+            <button class="btn btn-custom" type="button" style="margin-top: 15rem;">Workshop</button>
+        </a>
+        <a href="workshop.html">
+            <button class="btn btn-custom" type="button" style="margin-top: 15rem;">Kontakt os</button>
+        </a>
     </div>
+
+    <!--TEKST & TREKANT-->
     <section class="container-fluid">
         <div class="infoBox">
             <img src="./img/trekant.svg" alt="Trekant" class="triangle">
@@ -137,17 +145,26 @@
         </div>
     </section>
 
-    <script>
-        var x = 0;
-        function marginExpand(){
-            if(x == 0){
-                document.getElementById("vidOverlay").style.marginTop="464px";
-                x = 1;
-            } else {
-                document.getElementById("vidOverlay").style.marginTop="80px"
-                x = 0;
-            }
-        }
-    </script>
+    <!--FOOTER SECTION-->
+    <footer class="wrapper">
+        <div class="text-center">
+            <h4>INFO@GREENLEAD.DK</h2>
+            <h4>+45 93 60 54 32</h2>    
+            <h4>Danmark</h2>
+        </div>
+        <div class="midten">
+            <div class="imgContainer">
+                <img src="/img/logo_svg.svg" alt="GreenLeads Logo">
+            </div>
+        </div>
+        <div class="text-center">
+            <h2>Flere spørgsmål?</h2>
+            <a href="#">
+                <button class="btn btn-custom btn-lg" type="button">Kontakt</button>
+            </a>
+        </div>
+    </footer>
+
+    <script src="indexscript.js"></script>
 </body>
 </html>

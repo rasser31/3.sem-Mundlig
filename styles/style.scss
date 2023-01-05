@@ -10,8 +10,7 @@ body{
     video{
         position: relative;
         z-index: 0;
-
-        height: 85vh;
+        height: 90vh;
 
         object-fit: cover;
     }
@@ -22,46 +21,38 @@ body{
         z-index: 1;
         top: 0;
         left: 0;
-        height: 85vh;
+        height: 90vh;
         padding: 5em;
         text-align: center;
         margin-top: 80px;
-    
         hr{
             border-top: 5px solid $secondaryColor;
             width: 10vw;
             padding-top: 5vh;
         }
-        h3, h1{
+        h1{
+            color: white;
+            font-weight: 700;
+            font-style: normal;
+        }
+        p {
             color: white;
         }
-
-        h3{
-            padding-bottom: 2vh;
-        }
         button{
-            margin: 0.5vw;
-            margin-top: 30vh;
-            width: 10em;
-            height: 3em;
-
-            background-color: rgba($color: #000000, $alpha: 0);
-            border-radius: 0.4em;
-
-            border: 2px solid $secondaryColor;
-            color: $secondaryColor;
-            font-size: 1em;
+            margin-top: 20vh;
 
         }
     }
 
     section{
         background-color: $bgFarve2;
+        font-family: futura-pt, sans-serif;
+        font-weight: 400;
+        font-style: normal;
 
         .infoBox{
             padding: 2vh; padding-left: 15vw; padding-right: 15vw;
-
-
+            
             .triangle{
                 float: left;
                 width: 30em;
@@ -82,7 +73,6 @@ body{
                     font-size: 2em;
                 }
             }
-            
             .longTextTitle{
                 padding-top: 7em;
             
@@ -90,18 +80,38 @@ body{
             }
             .longText{
                 font-family: $poppins;
-                font-weight: 600;
+                font-weight: 400;
                 font-size: 1.2em;
             }
-
             h3{
                 text-align: center;
-
                 font-family: $poppins;
-                font-weight: 600;
+                font-weight: 400;
             }
         }
         
     }
 
+}
+
+//FOOTER SECTION
+footer {
+    background-color: $bgFarve1;
+    color: $fontFarve2;
+
+    font-family: futura-pt, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+    display: flex;
+    justify-content: space-evenly;
+
+    padding: 3rem;
+
+    h4 {
+        padding: 1rem;
+    }
+    h2 {
+        padding: 1rem;
+    }
 }

@@ -6,7 +6,7 @@ body {
 body video {
   position: relative;
   z-index: 0;
-  height: 85vh;
+  height: 90vh;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -16,7 +16,7 @@ body .videoOverlay {
   z-index: 1;
   top: 0;
   left: 0;
-  height: 85vh;
+  height: 90vh;
   padding: 5em;
   text-align: center;
   margin-top: 80px;
@@ -26,25 +26,22 @@ body .videoOverlay hr {
   width: 10vw;
   padding-top: 5vh;
 }
-body .videoOverlay h3, body .videoOverlay h1 {
+body .videoOverlay h1 {
+  color: white;
+  font-weight: 700;
+  font-style: normal;
+}
+body .videoOverlay p {
   color: white;
 }
-body .videoOverlay h3 {
-  padding-bottom: 2vh;
-}
 body .videoOverlay button {
-  margin: 0.5vw;
-  margin-top: 30vh;
-  width: 10em;
-  height: 3em;
-  background-color: rgba(0, 0, 0, 0);
-  border-radius: 0.4em;
-  border: 2px solid #FFC718;
-  color: #FFC718;
-  font-size: 1em;
+  margin-top: 20vh;
 }
 body section {
   background-color: #E2E2E2;
+  font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 body section .infoBox {
   padding: 2vh;
@@ -74,11 +71,28 @@ body section .infoBox .longTextTitle {
 }
 body section .infoBox .longText {
   font-family: "Source-sans-Pro, Poppins";
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.2em;
 }
 body section .infoBox h3 {
   text-align: center;
   font-family: "Source-sans-Pro, Poppins";
-  font-weight: 600;
+  font-weight: 400;
+}
+
+footer {
+  background-color: #464131;
+  color: #fff;
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 3rem;
+}
+footer h4 {
+  padding: 1rem;
+}
+footer h2 {
+  padding: 1rem;
 }/*# sourceMappingURL=style.css.map */
