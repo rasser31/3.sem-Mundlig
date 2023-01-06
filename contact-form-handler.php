@@ -1,24 +1,29 @@
-<?php
 
+<?php
+    // Get data from form 
     $name = $_POST['name'];
-    $visitor_email = $_POST['email'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+    $subject = $_POST['subject'];
     $message = $_POST['message'];
 
-    $email_from = 'mikkellau98@hotmail.com';
+    $to = "hidesh@live.dk";
 
-    $email_subject = 'New form submission';
+    // The following text will be sent
+    // Name = user entered name
+    // Email = user entered email
+    // Message = user entered message
+    $txt ="Name = ". $name . 
+    "\r\n . Phone = ". $phone .
+    "\r\n . Email = " . $email . 
+    "\r\n . Subject = ". $subject .
+    "\r\n Message =" . $message;
 
-    $email_body = "User Name: $name.\n".
-                    "User Email: $visitor_email.\n". 
-                        "User Message: $message.\n";
-
-    $to = "mikkellau98@hotmail.com";
-
-    $headers = "From $email_from \r\n";
-    $headers = "Reply-To $visitor_email \r\n";
-
-    mail($to,$email_subject,$email_body,$headers);
-
-    header("Location: kontaktOs.html");
-
+    $headers = "From: noreply@demosite.com". "\r\n" .  
+    "CC: somebodyelse@example.com";
+    if($email != NULL) {
+        mail($to, $subject, $txt, $headers);
+    }
+    // Redirect to
+    header("Location:kontaktOs.html");
 ?>
