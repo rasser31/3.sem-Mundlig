@@ -139,34 +139,34 @@
                     SWIFT: GRENGLGX <br>
                 </p>
             </div>
-            <div>
-                <form>
+            <div class="contact-form">
+                <form id="contact-form" method="post" action="contact-form-handler.php">
                     <!--Navn-->
                     <div class="form-group">
-                      <input type="name" class="form-control text" id="inputName" aria-describedby="emailHelp" placeholder="Navn">
+                      <input name="name" type="name" class="form-control text" id="inputName" aria-describedby="emailHelp" placeholder="Navn" required>
                     </div>
 
                     <!--E-mail-->
                     <div class="form-group">
-                        <input type="email" class="form-control text" id="inputEmail" aria-describedby="emailHelp" placeholder="E-mail">
+                        <input name="email" type="email" class="form-control text" id="inputEmail" aria-describedby="emailHelp" placeholder="E-mail" required>
                       </div>
 
                     <!--Telefon-->
                       <div class="form-group">
-                        <input type="phone" class="form-control text" id="inputPhone" aria-describedby="emailHelp" placeholder="Telefon">
+                        <input name="phone" type="phone" class="form-control text" id="inputPhone" aria-describedby="emailHelp" placeholder="Telefon" required>
                       </div>
 
                     <!--Emne-->
                     <div class="form-group">
-                      <input type="subject" class="form-control text" id="inputSubject" aria-describedby="emailHelp" placeholder="Emne">
+                      <input name="subject" type="subject" class="form-control text" id="inputSubject" aria-describedby="emailHelp" placeholder="Emne" required>
                     </div>
 
                     <!--Besked-->
                     <div class="form-group">
-                        <textarea type="message" class="form-control boxSize text" id="inputText" placeholder="Din besked"></textarea>
+                        <textarea name="message" type="message" class="form-control boxSize text" id="inputText" placeholder="Din besked" required></textarea>
                       </div>
 
-                    <button type="submit" class="btn btn-custom mx-auto container-fluid">Send besked</button>
+                    <button type="submit" class="btn btn-custom mx-auto container-fluid" value="SEND MESSAGE">Send besked</button>
                   </form>
             </div>
         </div>
