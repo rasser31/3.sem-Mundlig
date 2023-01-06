@@ -3,10 +3,14 @@ body {
   margin: 0;
   padding: 0;
 }
+body .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
 body video {
   position: relative;
   z-index: 0;
-  height: 90vh;
+  height: 91vh;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -16,7 +20,7 @@ body .videoOverlay {
   z-index: 1;
   top: 0;
   left: 0;
-  height: 90vh;
+  height: 91vh;
   padding: 5em;
   text-align: center;
   margin-top: 80px;
@@ -86,7 +90,7 @@ footer {
   font-family: futura-pt, sans-serif;
   font-weight: 700;
   font-style: normal;
-  display: flex;
+  display: flex !important;
   justify-content: space-evenly;
   padding: 3rem;
 }

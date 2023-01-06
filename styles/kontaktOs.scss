@@ -5,17 +5,14 @@
     background-color: #5C574A !important;
 }
 
-
 section{
-    h1{
-        font-size: 1.5rem;
+    p{
         text-align: center;
         font-family: futura-pt, sans-serif;
-        font-weight: 500;
+        font-weight: 400;
         font-style: normal;
         color: $fourthColor;
     }
-    
 
     hr{
         border-top: 5px solid $secondaryColor;
@@ -23,11 +20,9 @@ section{
         padding-top: 5vh;
     }
 
-    h2{
-        font-size: 3.375rem;
-        text-align: center;
+    h1 {
         font-family: futura-pt, sans-serif;
-        font-weight: 600;
+        font-weight: 700;
         font-style: normal;
         color: $fourthColor;
     }
