@@ -1,29 +1,23 @@
-
 <?php
-    // Get data from form 
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $phone = $_POST['phone'];
-    $subject = $_POST['subject'];
-    $message = $_POST['message'];
 
-    $to = "hidesh@live.dk";
-
-    // The following text will be sent
-    // Name = user entered name
-    // Email = user entered email
-    // Message = user entered message
-    $txt ="Name = ". $name . 
-    "\r\n . Phone = ". $phone .
-    "\r\n . Email = " . $email . 
-    "\r\n . Subject = ". $subject .
-    "\r\n Message =" . $message;
-
-    $headers = "From: noreply@demosite.com". "\r\n" .  
-    "CC: somebodyelse@example.com";
-    if($email != NULL) {
-        mail($to, $subject, $txt, $headers);
-    }
+if (isset($_POST['name']) && isset($_POST['phone']) && isset($_POST['email']) && isset($_POST['subject'])  && isset($_POST['message'])) {
+  $name = $_POST['name'];
+  $email = $_POST['email'];
+  $phone = $_POST['phone'];
+  $subject_message = $_POST['subject'];
+  $message = $_POST['message'];
+  $to = "hidesh@live.dk";
+  $subject = "Contact form submission";
+  $body = "From: $name\n E-Mail: $email\n Message:\n $message";
+  if (mail($to, $subject, $body)) {
+    echo "Your message was sent successfully!";
     // Redirect to
     header("Location:kontaktOs.html");
+  } else {
+    echo "There was an error sending your message. Please try again later.";
+    // Redirect to
+    header("Location:kontaktOs.html");
+  }
+}
+
 ?>

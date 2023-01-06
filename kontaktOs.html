@@ -146,27 +146,27 @@
                 <form id="contact-form" method="post" action="contact-form-handler.php">
                     <!--Navn-->
                     <div class="form-group">
-                      <input name="name" type="name" class="form-control text" id="inputName" aria-describedby="emailHelp" placeholder="Navn" required>
+                      <input name="name" for="name" type="name" class="form-control text" id="inputName" aria-describedby="emailHelp" placeholder="Navn" required>
                     </div>
 
                     <!--E-mail-->
                     <div class="form-group">
-                        <input name="email" type="email" class="form-control text" id="inputEmail" aria-describedby="emailHelp" placeholder="E-mail" required>
+                        <input name="email" for="email" type="email" class="form-control text" id="inputEmail" aria-describedby="emailHelp" placeholder="E-mail" required>
                       </div>
 
                     <!--Telefon-->
                       <div class="form-group">
-                        <input name="phone" type="phone" class="form-control text" id="inputPhone" aria-describedby="emailHelp" placeholder="Telefon" required>
+                        <input name="phone" for="phone" type="phone" class="form-control text" id="inputPhone" aria-describedby="emailHelp" placeholder="Telefon" required>
                       </div>
 
                     <!--Emne-->
                     <div class="form-group">
-                      <input name="subject" type="subject" class="form-control text" id="inputSubject" aria-describedby="emailHelp" placeholder="Emne" required>
+                      <input name="subject_message" for="subject_message" type="subject" class="form-control text" id="inputSubject" aria-describedby="emailHelp" placeholder="Emne" required>
                     </div>
 
                     <!--Besked-->
                     <div class="form-group">
-                        <textarea name="message" type="message" class="form-control boxSize text" id="inputText" placeholder="Din besked" required></textarea>
+                        <textarea name="message" for="message" type="message" class="form-control boxSize text" id="inputText" placeholder="Din besked" required></textarea>
                       </div>
 
                     <button type="submit" id="myBtn" class="btn btn-custom mx-auto container-fluid" value="SEND MESSAGE">Send besked</button>
