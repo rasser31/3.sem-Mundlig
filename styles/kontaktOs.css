@@ -42,38 +42,6 @@ main h2 {
   font-style: normal;
   color: #FFFFFF;
 }
-main .popUpContainer {
-  display: none;
-  position: fixed; /* Stay in place */
-  z-index: 1;
-  padding-top: 20%;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-main .popUpBesked {
-  background-color: #E2E2E2;
-  margin: auto;
-  border-radius: 3px;
-  padding: 1.5rem;
-  width: 20%;
-}
-main .popUpBesked p {
-  color: black;
-}
-main .popUpBesked span {
-  color: #aaaaaa;
-  font-size: 28px;
-  font-weight: bold;
-}
-main .popUpBesked span:hover, main .popUpBesked span:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
 
 @media only screen and (max-width: 864px) {
   .flexContainer {
