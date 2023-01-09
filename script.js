@@ -28,28 +28,54 @@ function myMap() {
 
 //When message is sent on kontakt os page
 
-// Get the modal
-var modal = document.getElementById("myModal");
+// Finder popup i html
+let popUpBesked = document.getElementById("PopUp");
 
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+// Knappen
+let button = document.getElementById("submitButton");
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+// krydset der lukker besked
+let span = document.getElementsByClassName("close")[0];
 
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
+// viser block når man klikker på btn
+button.onclick = function() {
+  popUpBesked.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
+// hvis klikker på kryds - viser none
 span.onclick = function() {
-  modal.style.display = "none";
+  popUpBesked.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
+// hvis brugeren klikker på alt andet - viser none
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+  if (event.target == popUpBesked) {
+    popUpBesked.style.display = "none";
   }
 }
+
+
+
+//Funktion der gør at man ikke besked ikke popper op uden input
+
+const formInput = document.getElementsByClassName(".inputText");
+const formButton = document.querySelector("#submitButton");
+
+// the default state is 'disabled'
+formButton.disabled = true; 
+
+// alternative is to use "change" - explained below
+formInput.addEventListener("keyup", buttonState);
+
+function buttonState() {
+    if (document.querySelector(".inputText").value === "") {
+        formButton.disabled = true; // return disabled as true whenever the input field is empty
+    } else {
+        formButton.disabled = false; // enable the button once the input field has content
+    }
+}
+
+// just verifying that the button has been clicked
+formButton.addEventListener("click", () => {
+console.log("You entered:", document.querySelector(".inputText").value);
+});
