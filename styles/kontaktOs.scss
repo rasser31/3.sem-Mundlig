@@ -58,8 +58,7 @@ main{
 
     @media only screen and (max-width: 864px){
         .flexContainer{
-            display: flex;
-            flex-direction: column;
+            flex-direction: column !important;
             
         }
     }
@@ -94,27 +93,6 @@ main{
         }
     }
 
-
-/*Footer*/
-footer {
-    display: flex !important;
-    background-color: $bgFarve1;
-    color: $fontFarve2;
-    font-family: futura-pt, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    flex-direction: row;
-    justify-content: space-evenly;
-
-    padding: 3rem;
-
-    h4 {
-        padding: 1rem;
-    }
-    h2 {
-        padding: 1rem;
-    }
-}
 
 
 .lds-ring {
@@ -154,16 +132,52 @@ footer {
   }
   
 
+/*Footer*/
+footer {
+    display: flex !important;
+    background-color: $bgFarve1;
+    color: $fontFarve2;
+    font-family: futura-pt, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    padding: 3rem;
+
+    h4 {
+        padding: 1rem;
+    }
+    h2 {
+        padding: 1rem;
+    }
+}
 
 //SMALL LAPTOP
 @media only screen and (max-width: 1024px) {
     //Footer til 1024px
     footer {
+
         img {
             display: none;
         }
     }
 }
+
+@media only screen and (max-width: 425px) {
+    //Footer til 425px
+    footer {
+        flex-direction: column !important;
+        h4 {
+            padding: 0rem;
+            font-size: 1rem;
+        }
+    }
+
+    
+}
+
+
 
                     
                 

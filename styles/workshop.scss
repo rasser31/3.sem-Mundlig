@@ -5,62 +5,6 @@
     padding: 0;
 }
 
-//NAVIGATION
-
-.logoTypo{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    color: white;
-    font-size: 2.25rem;
-}
-
-.navbar-custom {
-    background-color: $primaryColor;
-    padding-bottom: 20px;
-}
-
-.navbarText{
-    font-family: futura-pt, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 2rem;
-    color: $secondaryColor;
-}
-
-.navbar-nav {
-    margin-right: auto;
-}
-
-.navbar-nav > li{
-    padding-right:15px;
-  }
-
-.btn-custom {
-    border-color: $secondaryColor !important; 
-    color: $secondaryColor !important;
-}
-
-
-.active{
-    border-color: $secondaryColor !important;
-    background-color: transparent !important;
-    color: $thirdColor !important;
-}
-
-.btn-custom:hover {
-    border-color: $thirdColor !important;
-}
-
-#omOs{
-    white-space: nowrap;
-}
-
-#logoGreen{
-    display: flex !important;
-    flex-direction: row !important;
-}
-
-
 //BACKGROUND SECTION
 .BG {
     background-size: cover;
@@ -209,17 +153,53 @@ footer {
             position: relative;
         }
     }
+}
+    
 
+/*Footer*/
+footer {
+    display: flex !important;
+    background-color: $bgFarve1;
+    color: $fontFarve2;
+    font-family: futura-pt, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    padding: 3rem;
+
+    h4 {
+        padding: 1rem;
+    }
+    h2 {
+        padding: 1rem;
+    }
+}
+
+//SMALL LAPTOP
+@media only screen and (max-width: 1024px) {
     //Footer til 1024px
     footer {
+
         img {
             display: none;
         }
     }
 }
+
+@media only screen and (max-width: 425px) {
+    //Footer til 425px
+    footer {
+        flex-direction: column !important;
+        h4 {
+            padding: 0rem;
+            font-size: 1rem;
+        }
+    }
+
     
-
-
+}
 
 
 

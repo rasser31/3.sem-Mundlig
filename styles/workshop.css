@@ -3,58 +3,6 @@
   padding: 0;
 }
 
-.logoTypo {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  color: white;
-  font-size: 2.25rem;
-}
-
-.navbar-custom {
-  background-color: #464131;
-  padding-bottom: 20px;
-}
-
-.navbarText {
-  font-family: futura-pt, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 2rem;
-  color: #FFC718;
-}
-
-.navbar-nav {
-  margin-right: auto;
-}
-
-.navbar-nav > li {
-  padding-right: 15px;
-}
-
-.btn-custom {
-  border-color: #FFC718 !important;
-  color: #FFC718 !important;
-}
-
-.active {
-  border-color: #FFC718 !important;
-  background-color: transparent !important;
-  color: #00AC05 !important;
-}
-
-.btn-custom:hover {
-  border-color: #00AC05 !important;
-}
-
-#omOs {
-  white-space: nowrap;
-}
-
-#logoGreen {
-  display: flex !important;
-  flex-direction: row !important;
-}
-
 .BG {
   background-size: cover;
   min-height: 90.5vh;
@@ -181,8 +129,38 @@ footer h2 {
     padding: 0;
     position: relative;
   }
+}
+/*Footer*/
+footer {
+  display: flex !important;
+  background-color: #464131;
+  color: #fff;
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 3rem;
+}
+footer h4 {
+  padding: 1rem;
+}
+footer h2 {
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
   footer img {
     display: none;
+  }
+}
+@media only screen and (max-width: 425px) {
+  footer {
+    flex-direction: column !important;
+  }
+  footer h4 {
+    padding: 0rem;
+    font-size: 1rem;
   }
 }
 @media only screen and (max-width: 766px) {

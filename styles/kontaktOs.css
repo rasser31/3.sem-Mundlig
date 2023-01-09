@@ -45,8 +45,7 @@ main h2 {
 
 @media only screen and (max-width: 864px) {
   .flexContainer {
-    display: flex;
-    flex-direction: column;
+    flex-direction: column !important;
   }
 }
 form .form-control {
@@ -72,25 +71,6 @@ form .text {
   form .form-control {
     width: 100%;
   }
-}
-
-/*Footer*/
-footer {
-  display: flex !important;
-  background-color: #464131;
-  color: #fff;
-  font-family: futura-pt, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding: 3rem;
-}
-footer h4 {
-  padding: 1rem;
-}
-footer h2 {
-  padding: 1rem;
 }
 
 .lds-ring {
@@ -146,8 +126,36 @@ footer h2 {
     transform: rotate(360deg);
   }
 }
+/*Footer*/
+footer {
+  display: flex !important;
+  background-color: #464131;
+  color: #fff;
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 3rem;
+}
+footer h4 {
+  padding: 1rem;
+}
+footer h2 {
+  padding: 1rem;
+}
+
 @media only screen and (max-width: 1024px) {
   footer img {
     display: none;
+  }
+}
+@media only screen and (max-width: 425px) {
+  footer {
+    flex-direction: column !important;
+  }
+  footer h4 {
+    padding: 0rem;
+    font-size: 1rem;
   }
 }/*# sourceMappingURL=kontaktOs.css.map */
