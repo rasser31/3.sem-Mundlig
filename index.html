@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,7 +24,9 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-
+    <!--Font-->
+    <link rel="stylesheet" href="https://use.typekit.net/xcl0ute.css"><!--Poppins-->
+    <link rel="stylesheet" href="https://use.typekit.net/ucl8htq.css"><!--Futura PT, Book & Heavy-->
 </head>
 <body>
 
@@ -40,7 +42,7 @@
                 
     
                 <!--Repsponsive button-->
-                <button class="navbar-toggler btn-custom" type="button" data-toggle="collapse" data-target="#navbarSupport" aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler btn-custom" type="button" data-toggle="collapse" data-target="#navbarSupport" aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation" onclick="marginExpand()">
                     <span class="navbar-toggler-icon">
                         <img src="./img/menu.svg" alt="burgermenu">
                     </span>
@@ -75,7 +77,7 @@
                         <ul class="navbar-nav d-flex flex-row">
                             <li class="nav-item">
                                 <a href="index.html">
-                                    <button class="btn btn-custom active btn-lg" type="button">Forside</button>
+                                    <button class="btn btn-custom btn-lg" type="button">Forside</button>
                                 </a>
                             </li>
         
@@ -87,7 +89,7 @@
         
                             <li class="nav-item">
                                 <a href="workshop.html">
-                                    <button class="btn btn-custom btn-lg" type="button">Workshop</button>
+                                    <button class="btn btn-custom active btn-lg" type="button">Workshop</button>
                                 </a>
                             </li>
         
@@ -121,7 +123,12 @@
     <div class="videoOverlay container-fluid" id="vidOverlay">
         <p class="animate__animated animate__fadeIn">Vi udfører rådgivning inden for:</p>
         <hr>
-        <h1 class="animate__animated animate__fadeIn">Grøn omstilling. Projektudvikling. Finansiering.</h1>
+        <div class="d-flex justify-content-center flex-column">
+            <h1 class="animate__animated animate__fadeIn animate__delay-2s px-2">Grøn omstilling</h1>
+            <h1 class="animate__animated animate__fadeIn animate__delay-3s px-2">Projektudvikling</h1>
+            <h1 class="animate__animated animate__fadeIn animate__delay-4s px-2">Finansiering</h1>
+        </div>
+        
 
         <a href="workshop.html">
             <button class="btn btn-custom" type="button">Workshop</button>
@@ -143,7 +150,7 @@
                 <li class="animate__animated animate__fadeIn text-center">Økonom-teknisk udvikling</li>
                 <li class="animate__animated animate__fadeIn text-center">Match af projekter med investorer</li>
             </ul>
-
+            <hr>
             <h2 class="longTextTitle animate__animated animate__fadeIn text-center">Greenlead - Rådgivning i grønomstilling</h2>
             <p class="longText animate__animated animate__fadeIn text-center">GreenLead er en virksomhed der er specialiseret i at gøre grønne visioner til virkelighed, dels i samarbejdet med investorer samt også i samarbejdet med industrien i omstillingen over til grøn energi. <br> <br>
                 ​GreenLead rådgiver i vedvarende energisystemer og vedvarende energiinvesteringer – Vi har en stor portefølje af projekter samt et bredt netværk af investorer - vi arbejder ofte i ”vakuummet” mellem finansiering og projektet. Vi er specialiseret i at designe grønne projekter og beskrive projektet for investorer samt at finde de korrekte projekter til den rette investor. Det vil sige at gøre den grønne omstilling til virkelighed. <br> <br>
@@ -151,9 +158,29 @@
                 ​Så er GreenLead i stand til at hjælpe dig. Vi har over de sidste 10 år arbejdet med netop det spændingsfelt, lige fra vindmøller, arktisk vandkraft, energilagring, waste-to-energy, solceller, og energioptimering af anlæg. Vores projekter spænder fra mindre projekter til omkring 1 mio. kr. til projekter op til 3 mia. kr. 
             </p>
             <h3 class="animate__animated animate__fadeIn text-center">Lad os hjælpe dig og din virksomhed</h3>
-            
+            <hr>
         </div>
     </section>
+
+     <!--FOOTER SECTION-->
+     <footer class="wrapper">
+        <div class="text-center">
+            <h4>INFO@GREENLEAD.DK</h2>
+            <h4>+45 93 60 54 32</h2>    
+            <h4>Danmark</h2>
+        </div>
+        <div class="midten">
+            <div class="imgContainer">
+                <img src="/img/logo_svg.svg" alt="">
+            </div>
+        </div>
+        <div class="text-center">
+            <h2>Flere spørgsmål?</h2>
+            <a href="#">
+                <button class="btn btn-custom btn-lg" type="button">Kontakt</button>
+            </a>
+        </div>
+    </footer>
 
 
     <script src="script.js"></script>

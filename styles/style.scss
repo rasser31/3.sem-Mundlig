@@ -36,6 +36,7 @@ body{
             padding-top: 5vh;
         }
         h1{
+            font-size: 2rem;
             color: white;
             font-weight: 700;
             font-style: normal;
@@ -59,18 +60,28 @@ body{
             flex-direction: column;
             margin-left: 15%;
             margin-right: 15%;
+
+            h2{
+                font-size: 1.5rem;
+                font-weight: 700;
+            }
+
             .triangle{
-                width: 50%;
+                width: 60% !important;
                 margin-left: auto;
                 margin-right: auto;
+                filter: drop-shadow(.1rem .1rem 0.5rem black);
+                padding-bottom: 1rem;
             }
             .triangleInfo{
                 display: flex;
                 justify-content: space-evenly;
                 list-style: none;
+                padding: 0 !important;
                 li {
                     text-decoration: underline $secondaryColor;
                     margin: 1rem;
+                    font-weight: 600;
                 }
                 .longTextTitle{
                     text-align: center;
@@ -87,21 +98,27 @@ body{
             }
         }
     }
+}
 
+hr{
+    border-top: 5px solid $secondaryColor !important;
+    width: 45vw;
+    padding-top: 5vh;
+}
 
-//FOOTER SECTION
+/*Footer*/
 footer {
+    display: flex !important;
     background-color: $bgFarve1;
     color: $fontFarve2;
-
     font-family: futura-pt, sans-serif;
     font-weight: 700;
     font-style: normal;
-
-    display: flex !important;
+    flex-direction: row;
     justify-content: space-evenly;
 
     padding: 3rem;
+
     h4 {
         padding: 1rem;
     }
@@ -109,11 +126,32 @@ footer {
         padding: 1rem;
     }
 }
-}
 
+//SMALL LAPTOP
 @media only screen and (max-width: 1024px) {
+    //Footer til 1024px
+    footer {
 
+        img {
+            display: none;
+        }
+    }
 }
+
+@media only screen and (max-width: 425px) {
+    //Footer til 425px
+    footer {
+        flex-direction: column !important;
+        h4 {
+            padding: 0rem;
+            font-size: 1rem;
+        }
+    }
+
+    
+}
+
+
 
 @media only screen and (max-width: 425px) {
     .infoBox {
@@ -128,5 +166,11 @@ footer {
     .infoBox {
         margin-left: 5% !important;
         margin-right: 5% !important;
+    }
+}
+
+@media only screen and (max-width: 981px) and (min-width: 770px){
+    .videoOverlay{
+        margin-top: 121px !important;
     }
 }

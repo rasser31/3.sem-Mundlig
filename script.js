@@ -5,7 +5,7 @@ function marginExpand(){
         document.getElementById("vidOverlay").style.marginTop="464px";
         x = 1;
     } else {
-        document.getElementById("vidOverlay").style.marginTop="80px"
+        document.getElementById("vidOverlay", "infoBox").style.marginTop="80px"
         x = 0;
     }
 }

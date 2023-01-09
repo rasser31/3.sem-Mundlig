@@ -31,6 +31,7 @@ body .videoOverlay hr {
   padding-top: 5vh;
 }
 body .videoOverlay h1 {
+  font-size: 2rem;
   color: white;
   font-weight: 700;
   font-style: normal;
@@ -53,20 +54,28 @@ body section .infoBox {
   margin-left: 15%;
   margin-right: 15%;
 }
+body section .infoBox h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
 body section .infoBox .triangle {
-  width: 50%;
+  width: 60% !important;
   margin-left: auto;
   margin-right: auto;
+  filter: drop-shadow(0.1rem 0.1rem 0.5rem black);
+  padding-bottom: 1rem;
 }
 body section .infoBox .triangleInfo {
   display: flex;
   justify-content: space-evenly;
   list-style: none;
+  padding: 0 !important;
 }
 body section .infoBox .triangleInfo li {
   -webkit-text-decoration: underline #FFC718;
           text-decoration: underline #FFC718;
   margin: 1rem;
+  font-weight: 600;
 }
 body section .infoBox .triangleInfo .longTextTitle {
   text-align: center;
@@ -80,23 +89,46 @@ body section .infoBox .triangleInfo h3 {
   font-family: "Source-sans-Pro, Poppins";
   font-weight: 400;
 }
-body footer {
+
+hr {
+  border-top: 5px solid #FFC718 !important;
+  width: 45vw;
+  padding-top: 5vh;
+}
+
+/*Footer*/
+footer {
+  display: flex !important;
   background-color: #464131;
   color: #fff;
   font-family: futura-pt, sans-serif;
   font-weight: 700;
   font-style: normal;
-  display: flex !important;
+  flex-direction: row;
   justify-content: space-evenly;
   padding: 3rem;
 }
-body footer h4 {
+footer h4 {
   padding: 1rem;
 }
-body footer h2 {
+footer h2 {
   padding: 1rem;
 }
 
+@media only screen and (max-width: 1024px) {
+  footer img {
+    display: none;
+  }
+}
+@media only screen and (max-width: 425px) {
+  footer {
+    flex-direction: column !important;
+  }
+  footer h4 {
+    padding: 0rem;
+    font-size: 1rem;
+  }
+}
 @media only screen and (max-width: 425px) {
   .infoBox {
     margin-left: 0;
@@ -108,5 +140,10 @@ body footer h2 {
   .infoBox {
     margin-left: 5% !important;
     margin-right: 5% !important;
+  }
+}
+@media only screen and (max-width: 981px) and (min-width: 770px) {
+  .videoOverlay {
+    margin-top: 121px !important;
   }
 }/*# sourceMappingURL=style.css.map */
