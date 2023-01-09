@@ -24,7 +24,7 @@
   font-family: futura-pt, sans-serif;
   font-weight: 400;
   font-style: normal;
-  padding-top: 7rem;
+  margin-bottom: 0rem !important;
 }
 .BG h1 {
   font-family: futura-pt, sans-serif;
@@ -32,17 +32,9 @@
   font-style: normal;
   z-index: 1;
 }
-.BG .yellowStroke {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  background-color: #FFC718;
-  height: 0.3rem;
-  width: 7rem;
-  left: 41.5rem;
-  margin-bottom: 1rem;
-  padding: 0;
+.BG .btn-custom {
+  font-size: 1.5rem;
+  font-family: futura-pt, sans-serif;
 }
 
 hr {
@@ -51,12 +43,13 @@ hr {
   padding-top: 5vh;
   opacity: 100 !important;
   align-items: center !important;
+  margin-bottom: 0rem !important;
 }
 
 .textContainer {
   display: flex;
   flex-direction: row;
-  padding: 2rem;
+  padding: 3rem;
   background-color: #E2E2E2;
   color: #404040;
 }
@@ -65,7 +58,7 @@ hr {
   text-align: center;
 }
 .textContainer .subject {
-  padding-right: 5px;
+  padding: 3rem;
 }
 .textContainer h2 {
   color: black;
