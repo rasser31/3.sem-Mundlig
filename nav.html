@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,12 +27,13 @@
     <!--navbar-->
         <!--Navigation bar-->
         <header>
-            <nav class="navbar navbar-custom justify-content-between ms-auto mx-auto navbar-expand-md container-fluid"> 
+            <nav id="navbarNav" class="navbar navbar-custom ms-auto mx-auto navbar-expand-md"> 
                 <!--Logo-->
-                <a class="navbar-brand" href="#">
-                    <img src="img/logo_uden_text.svg" width="50" height="50" class="d-inline-block align-top logoTypo" alt=""> 
-                    <div class="d-inline-block logoTypo">GreenLead</div>
-                </a>
+                    <a id="logoGreen" class="navbar-brand" href="#">
+                        <img src="img/logo_uden_text.svg" width="50" height="50" class="align-top logoTypo" alt=""> 
+                        <div class="logoTypo pl-2">GreenLead</div>
+                    </a>
+                
     
                 <!--Repsponsive button-->
                 <button class="navbar-toggler btn-custom" type="button" data-toggle="collapse" data-target="#navbarSupport" aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,45 +67,45 @@
                 </div>
     
                 <!--Medium & Large screen-->
-                <form class="form-inline d-sm-none d-md-block d-none d-sm-block" id="desktopNav">
-                    <ul class="navbar-nav ml-auto flex-row flex">
-                        <li class="nav-item">
-                            <a href="index.html">
-                                <button class="btn btn-custom btn-lg" type="button">Forside</button>
-                            </a>
-                        </li>
-    
-                        <li class="nav-item">
-                            <a href="#">
-                                <button class="btn btn-custom btn-lg" type="button">Services</button>
-                            </a>
-                        </li>
-    
-                        <li class="nav-item">
-                            <a href="workshop.html">
-                                <button class="btn btn-custom active btn-lg" type="button">Workshop</button>
-                            </a>
-                        </li>
-    
-                        <li class="nav-item">
-                            <a href="#">
-                                <button class="btn btn-custom btn-lg" type="button">Projekter</button>
-                            </a>
-                        </li>
-    
-                        <li class="nav-item">
-                            <a href="#">
-                                <button class="btn btn-custom btn-lg" type="button" id="omOs">Om os</button>
-                            </a>
-                        </li>
-    
-                        <li class="nav-item">
-                            <a href="kontaktOs.html">
-                                <button class="btn btn-custom btn-lg" type="button">Kontakt</button>
-                            </a>
-                        </li>
+                    <div class="form-inline d-sm-none d-md-block d-none d-sm-block" id="desktopNav">
+                        <ul class="navbar-nav d-flex flex-row">
+                            <li class="nav-item">
+                                <a href="index.html">
+                                    <button class="btn btn-custom btn-lg" type="button">Forside</button>
+                                </a>
+                            </li>
+        
+                            <li class="nav-item">
+                                <a href="#">
+                                    <button class="btn btn-custom btn-lg" type="button">Services</button>
+                                </a>
+                            </li>
+        
+                            <li class="nav-item">
+                                <a href="workshop.html">
+                                    <button class="btn btn-custom active btn-lg" type="button">Workshop</button>
+                                </a>
+                            </li>
+        
+                            <li class="nav-item">
+                                <a href="#">
+                                    <button class="btn btn-custom btn-lg" type="button">Projekter</button>
+                                </a>
+                            </li>
+        
+                            <li class="nav-item">
+                                <a href="#">
+                                    <button class="btn btn-custom btn-lg" type="button" id="omOs">Om os</button>
+                                </a>
+                            </li>
+        
+                            <li class="nav-item">
+                                <a href="kontaktOs.html">
+                                    <button class="btn btn-custom btn-lg" type="button">Kontakt</button>
+                                </a>
+                            </li>
                         </ul>
-                    </form>
+                    </div>
                 </nav>
         </header>
 </body>
