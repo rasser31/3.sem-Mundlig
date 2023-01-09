@@ -50,6 +50,11 @@
   white-space: nowrap;
 }
 
+#logoGreen {
+  display: flex !important;
+  flex-direction: row !important;
+}
+
 .BG {
   background-size: cover;
   min-height: 90.5vh;
@@ -195,4 +200,36 @@ footer h2 {
   .btn-lg {
     padding: 2px;
   }
+}
+@media only screen and (max-width: 766px) {
+  #desktopNav {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 1103px) and (min-width: 1024px) {
+  .btn-lg {
+    font-size: 0.99rem !important;
+  }
+}
+@media only screen and (max-width: 1024px) and (min-width: 984px) {
+  .btn-lg {
+    font-size: 0.9rem !important;
+  }
+}
+@media only screen and (max-width: 981px) and (min-width: 770px) {
+  .navbar-expand-md {
+    flex-direction: initial !important;
+    flex-flow: wrap !important;
+    justify-content: space-between !important;
+  }
+}
+#navbarNav {
+  display: flex;
+  flex-direction: column !important;
+  align-items: center;
+  justify-content: center !important;
+}
+
+.btn-lg {
+  font-size: 1rem !important;
 }/*# sourceMappingURL=workshop.css.map */
