@@ -29,88 +29,90 @@
 </head>
 <body class="bgcolor">
 
-    <!--Navigation bar-->
-    <header>
-        <nav class="navbar navbar-custom justify-content-between ms-auto mx-auto navbar-expand-md container-fluid"> 
-            <!--Logo-->
-            <a class="navbar-brand" href="#">
-                <img src="img/logo_uden_text.svg" width="50" height="50" class="d-inline-block align-top logoTypo" alt=""> 
-                <div class="d-inline-block logoTypo">GreenLead</div>
-            </a>
-
-            <!--Repsponsive button-->
-            <button class="navbar-toggler btn-custom" type="button" data-toggle="collapse" data-target="#navbarSupport" aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon">
-                    <img src="./img/menu.svg" alt="burgermenu">
-                </span>
-            </button>
-            
-            <!--Small screen collapse -  872px-->
-            <div class="collapse navbar-collapse" id="navbarSupport">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                    <a class="nav-link text-center navbarText d-md-none" href="index.html">Forside</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link text-center navbarText d-md-none" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link text-center navbarText d-md-none" href="workshop.html">Workshop</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-center navbarText d-md-none" href="#">Projekter</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-center navbarText d-md-none" href="#">Om os</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-center navbarText d-md-none" href="kontaktOs.html">Kontakt</a>
-                    </li>
-                </ul>
-            </div>
-
-            <!--Medium & Large screen-->
-            <form class="form-inline d-sm-none d-md-block d-none d-sm-block" id="desktopNav">
-                <ul class="navbar-nav ml-auto flex-row flex">
-                    <li class="nav-item">
-                        <a href="index.html">
-                            <button class="btn btn-custom btn-lg" type="button">Forside</button>
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#">
-                            <button class="btn btn-custom btn-lg" type="button">Services</button>
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="workshop.html">
-                            <button class="btn btn-custom active btn-lg" type="button">Workshop</button>
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#">
-                            <button class="btn btn-custom btn-lg" type="button">Projekter</button>
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#">
-                            <button class="btn btn-custom btn-lg" type="button" id="omOs">Om os</button>
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="kontaktOs.html">
-                            <button class="btn btn-custom btn-lg" type="button">Kontakt</button>
-                        </a>
-                    </li>
+    <!--navbar-->
+        <!--Navigation bar-->
+        <header>
+            <nav id="navbarNav" class="navbar navbar-custom ms-auto mx-auto navbar-expand-md"> 
+                <!--Logo-->
+                    <a id="logoGreen" class="navbar-brand" href="#">
+                        <img src="img/logo_uden_text.svg" width="50" height="50" class="align-top logoTypo" alt=""> 
+                        <div class="logoTypo pl-2">GreenLead</div>
+                    </a>
+                
+    
+                <!--Repsponsive button-->
+                <button class="navbar-toggler btn-custom" type="button" data-toggle="collapse" data-target="#navbarSupport" aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <img src="./img/menu.svg" alt="burgermenu">
+                    </span>
+                </button>
+                
+                <!--Small screen collapse -  872px-->
+                <div class="collapse navbar-collapse" id="navbarSupport">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                        <a class="nav-link text-center navbarText d-md-none" href="index.html">Forside</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-center navbarText d-md-none" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-center navbarText d-md-none" href="workshop.html">Workshop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-center navbarText d-md-none" href="#">Projekter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-center navbarText d-md-none" href="#">Om os</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-center navbarText d-md-none" href="kontaktOs.html">Kontakt</a>
+                        </li>
                     </ul>
-                </form>
-            </nav>
-    </header>
+                </div>
+    
+                <!--Medium & Large screen-->
+                    <div class="form-inline d-sm-none d-md-block d-none d-sm-block" id="desktopNav">
+                        <ul class="navbar-nav d-flex flex-row">
+                            <li class="nav-item">
+                                <a href="index.html">
+                                    <button class="btn btn-custom btn-lg" type="button">Forside</button>
+                                </a>
+                            </li>
+        
+                            <li class="nav-item">
+                                <a href="#">
+                                    <button class="btn btn-custom btn-lg" type="button">Services</button>
+                                </a>
+                            </li>
+        
+                            <li class="nav-item">
+                                <a href="workshop.html">
+                                    <button class="btn btn-custom active btn-lg" type="button">Workshop</button>
+                                </a>
+                            </li>
+        
+                            <li class="nav-item">
+                                <a href="#">
+                                    <button class="btn btn-custom btn-lg" type="button">Projekter</button>
+                                </a>
+                            </li>
+        
+                            <li class="nav-item">
+                                <a href="#">
+                                    <button class="btn btn-custom btn-lg" type="button" id="omOs">Om os</button>
+                                </a>
+                            </li>
+        
+                            <li class="nav-item">
+                                <a href="kontaktOs.html">
+                                    <button class="btn btn-custom btn-lg" type="button">Kontakt</button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+        </header>
 
     <section class="mx-auto bgcolor mb pt-5">
         <hr>
