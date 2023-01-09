@@ -34,6 +34,7 @@
         font-family: futura-pt, sans-serif;
         font-weight: 700;
         font-style: normal;
+        z-index: 1;
     }
     .yellowStroke {
         position: relative;
@@ -49,15 +50,34 @@
     }
 }
 
+hr{
+    border-top: 5px solid $secondaryColor !important;
+    width: 10vw;
+    padding-top: 5vh;
+    opacity: 100 !important;
+    align-items: center !important;
+}
+
 //TEXT SECTION
 .textContainer {
     display: flex;
-    padding: 3rem;
+    flex-direction: row;
+    padding: 2rem;
     background-color: $bgFarve2;
     color: $fontFarve1;
     p {
-        padding-right: 3rem;
         margin: 0;
+        text-align: center;
+    }
+    
+    .subject{
+        padding-right: 5px;
+    }
+
+    h2{
+        color: black;
+        font-size: 1.5rem;
+        text-align: center;
     }
 }
 
@@ -105,12 +125,6 @@ footer {
 
                     //SMALL LAPTOP
 @media only screen and (max-width: 1024px) {
-    .BG {
-        .yellowStroke {
-            left: 28.5rem;
-        }
-    }
-
     //TEXT SECTION til 1024
     .VideoContainer {
 
@@ -123,6 +137,7 @@ footer {
         }
     }
     .textContainer {
+        flex-direction: column !important;
         padding: 2rem;
         h4 {
             padding-left: 1rem;
@@ -130,12 +145,14 @@ footer {
         p {
             padding: 1rem;
         }
-    }
-
+    }    
+}
+    
+@media only screen and (max-width: 1377px) {
     //VIDEO + TEXT SECTION til 1024
     .VideoTextContainer {
         display: flex;
-        flex-direction: column;
+        flex-direction: column !important;
         padding: 2rem;
         justify-content: center;
         
@@ -154,7 +171,6 @@ footer {
         }
     }
 }
-    
 
 /*Footer*/
 footer {
@@ -205,9 +221,6 @@ footer {
 
                     //TABLET
 @media only screen and (max-width: 766px) {
-    #desktopNav{
-        display: none !important;
-    }
     .VideoTextContainer {
         iframe {
             width: 680;
@@ -217,49 +230,3 @@ footer {
         }
     }
 }
-
-@media only screen and (max-width: 1100px) and (min-width: 770px)  {
-    .btn-lg{
-            padding: 2px;
-        }
-}
-
-
-
-@media only screen and (max-width: 766px) {
-    #desktopNav{
-        display: none !important;
-    }
-}
-
-
-
-@media only screen and (max-width: 1103px) and (min-width: 1024px)  {
-    .btn-lg{
-            font-size: 0.99rem !important;
-        }
-}
-
-@media only screen and (max-width: 1024px) and (min-width: 984px)  {
-    .btn-lg{
-            font-size: 0.90rem !important;
-        }
-}
-
-@media only screen and (max-width: 981px) and (min-width: 770px) {
-    .navbar-expand-md{
-        flex-direction: initial !important;
-        flex-flow: wrap !important;
-        justify-content: space-between !important;
-    }
-}
-    #navbarNav{
-        display: flex;
-        flex-direction: column !important;
-        align-items: center;
-        justify-content: center !important;
-    }
-
-    .btn-lg {
-        font-size: 1rem !important;
-    }

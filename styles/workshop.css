@@ -30,6 +30,7 @@
   font-family: futura-pt, sans-serif;
   font-weight: 700;
   font-style: normal;
+  z-index: 1;
 }
 .BG .yellowStroke {
   position: relative;
@@ -44,15 +45,32 @@
   padding: 0;
 }
 
+hr {
+  border-top: 5px solid #FFC718 !important;
+  width: 10vw;
+  padding-top: 5vh;
+  opacity: 100 !important;
+  align-items: center !important;
+}
+
 .textContainer {
   display: flex;
-  padding: 3rem;
+  flex-direction: row;
+  padding: 2rem;
   background-color: #E2E2E2;
   color: #404040;
 }
 .textContainer p {
-  padding-right: 3rem;
   margin: 0;
+  text-align: center;
+}
+.textContainer .subject {
+  padding-right: 5px;
+}
+.textContainer h2 {
+  color: black;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .VideoTextContainer {
@@ -91,9 +109,6 @@ footer h2 {
 }
 
 @media only screen and (max-width: 1024px) {
-  .BG .yellowStroke {
-    left: 28.5rem;
-  }
   .VideoContainer iframe {
     position: absolute;
     top: 0;
@@ -102,6 +117,7 @@ footer h2 {
     height: 100%;
   }
   .textContainer {
+    flex-direction: column !important;
     padding: 2rem;
   }
   .textContainer h4 {
@@ -110,9 +126,11 @@ footer h2 {
   .textContainer p {
     padding: 1rem;
   }
+}
+@media only screen and (max-width: 1377px) {
   .VideoTextContainer {
     display: flex;
-    flex-direction: column;
+    flex-direction: column !important;
     padding: 2rem;
     justify-content: center;
   }
@@ -164,50 +182,10 @@ footer h2 {
   }
 }
 @media only screen and (max-width: 766px) {
-  #desktopNav {
-    display: none !important;
-  }
   .VideoTextContainer iframe {
     width: 680;
   }
   .VideoTextContainer #VideoTextContainerh2 {
     margin-top: 2rem;
   }
-}
-@media only screen and (max-width: 1100px) and (min-width: 770px) {
-  .btn-lg {
-    padding: 2px;
-  }
-}
-@media only screen and (max-width: 766px) {
-  #desktopNav {
-    display: none !important;
-  }
-}
-@media only screen and (max-width: 1103px) and (min-width: 1024px) {
-  .btn-lg {
-    font-size: 0.99rem !important;
-  }
-}
-@media only screen and (max-width: 1024px) and (min-width: 984px) {
-  .btn-lg {
-    font-size: 0.9rem !important;
-  }
-}
-@media only screen and (max-width: 981px) and (min-width: 770px) {
-  .navbar-expand-md {
-    flex-direction: initial !important;
-    flex-flow: wrap !important;
-    justify-content: space-between !important;
-  }
-}
-#navbarNav {
-  display: flex;
-  flex-direction: column !important;
-  align-items: center;
-  justify-content: center !important;
-}
-
-.btn-lg {
-  font-size: 1rem !important;
 }/*# sourceMappingURL=workshop.css.map */
