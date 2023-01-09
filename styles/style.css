@@ -39,7 +39,7 @@ body .videoOverlay p {
   color: white;
 }
 body .videoOverlay button {
-  margin-top: 20vh;
+  margin-top: 5vh;
 }
 body section {
   background-color: #E2E2E2;
@@ -48,43 +48,39 @@ body section {
   font-style: normal;
 }
 body section .infoBox {
-  padding: 2vh;
-  padding-left: 15vw;
-  padding-right: 15vw;
+  display: flex;
+  flex-direction: column;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 body section .infoBox .triangle {
-  float: left;
-  width: 30em;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 body section .infoBox .triangleInfo {
-  position: relative;
+  display: flex;
+  justify-content: space-evenly;
   list-style: none;
 }
-body section .infoBox .triangleInfo h2, body section .infoBox .triangleInfo li {
-  width: 60vw;
-  padding-left: 30vw;
-  font-size: 1.7em;
+body section .infoBox .triangleInfo li {
+  -webkit-text-decoration: underline #FFC718;
+          text-decoration: underline #FFC718;
+  margin: 1rem;
 }
-body section .infoBox .triangleInfo h2 {
-  padding-top: 5vh;
-  font-size: 2em;
-}
-body section .infoBox .longTextTitle {
-  padding-top: 7em;
+body section .infoBox .triangleInfo .longTextTitle {
   text-align: center;
 }
-body section .infoBox .longText {
+body section .infoBox .triangleInfo .longText {
   font-family: "Source-sans-Pro, Poppins";
   font-weight: 400;
-  font-size: 1.2em;
 }
-body section .infoBox h3 {
+body section .infoBox .triangleInfo h3 {
   text-align: center;
   font-family: "Source-sans-Pro, Poppins";
   font-weight: 400;
 }
-
-footer {
+body footer {
   background-color: #464131;
   color: #fff;
   font-family: futura-pt, sans-serif;
@@ -94,9 +90,23 @@ footer {
   justify-content: space-evenly;
   padding: 3rem;
 }
-footer h4 {
+body footer h4 {
   padding: 1rem;
 }
-footer h2 {
+body footer h2 {
   padding: 1rem;
+}
+
+@media only screen and (max-width: 425px) {
+  .infoBox {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .triangleInfo {
+    flex-direction: column;
+  }
+  .infoBox {
+    margin-left: 5% !important;
+    margin-right: 5% !important;
+  }
 }/*# sourceMappingURL=style.css.map */

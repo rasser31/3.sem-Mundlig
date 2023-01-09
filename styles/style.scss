@@ -44,60 +44,50 @@ body{
             color: white;
         }
         button{
-            margin-top: 20vh;
+            margin-top: 5vh;
 
         }
     }
 
-    section{
+    section {
         background-color: $bgFarve2;
         font-family: futura-pt, sans-serif;
         font-weight: 400;
         font-style: normal;
-
         .infoBox{
-            padding: 2vh; padding-left: 15vw; padding-right: 15vw;
-            
+            display: flex;
+            flex-direction: column;
+            margin-left: 15%;
+            margin-right: 15%;
             .triangle{
-                float: left;
-                width: 30em;
+                width: 50%;
+                margin-left: auto;
+                margin-right: auto;
             }
-
             .triangleInfo{
-                position: relative;
+                display: flex;
+                justify-content: space-evenly;
                 list-style: none;
-                
-                h2, li{
-                    width: 60vw;
-                    padding-left: 30vw;
-
-                    font-size: 1.7em;
+                li {
+                    text-decoration: underline $secondaryColor;
+                    margin: 1rem;
                 }
-                h2{
-                    padding-top: 5vh;
-                    font-size: 2em;
+                .longTextTitle{
+                    text-align: center;
                 }
-            }
-            .longTextTitle{
-                padding-top: 7em;
-            
-                text-align: center;
-            }
-            .longText{
-                font-family: $poppins;
-                font-weight: 400;
-                font-size: 1.2em;
-            }
-            h3{
-                text-align: center;
-                font-family: $poppins;
-                font-weight: 400;
+                .longText{
+                    font-family: $poppins;
+                    font-weight: 400;
+                }
+                h3{
+                    text-align: center;
+                    font-family: $poppins;
+                    font-weight: 400;
+                }
             }
         }
-        
     }
 
-}
 
 //FOOTER SECTION
 footer {
@@ -117,5 +107,26 @@ footer {
     }
     h2 {
         padding: 1rem;
+    }
+}
+}
+
+@media only screen and (max-width: 1024px) {
+
+}
+
+@media only screen and (max-width: 425px) {
+    .infoBox {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .triangleInfo {
+        flex-direction: column;
+    }
+
+    .infoBox {
+        margin-left: 5% !important;
+        margin-right: 5% !important;
     }
 }
