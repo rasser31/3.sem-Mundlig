@@ -53,29 +53,3 @@ window.onclick = function(event) {
     popUpBesked.style.display = "none";
   }
 }
-
-
-
-//Funktion der gør at man ikke besked ikke popper op uden input
-
-const formInput = document.getElementsByClassName(".inputText");
-const formButton = document.querySelector("#submitButton");
-
-// the default state is 'disabled'
-formButton.disabled = true; 
-
-// alternative is to use "change" - explained below
-formInput.addEventListener("keyup", buttonState);
-
-function buttonState() {
-    if (document.querySelector(".inputText").value === "") {
-        formButton.disabled = true; // return disabled as true whenever the input field is empty
-    } else {
-        formButton.disabled = false; // enable the button once the input field has content
-    }
-}
-
-// just verifying that the button has been clicked
-formButton.addEventListener("click", () => {
-console.log("You entered:", document.querySelector(".inputText").value);
-});
