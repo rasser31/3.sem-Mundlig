@@ -26,30 +26,3 @@ function myMap() {
 }
 
 
-//When message is sent on kontakt os page
-
-// Finder popup i html
-let popUpBesked = document.getElementById("PopUp");
-
-// Knappen
-let button = document.getElementById("submitButton");
-
-// krydset der lukker besked
-let span = document.getElementsByClassName("close")[0];
-
-// viser block når man klikker på btn
-button.onclick = function() {
-  popUpBesked.style.display = "block";
-}
-
-// hvis klikker på kryds - viser none
-span.onclick = function() {
-  popUpBesked.style.display = "none";
-}
-
-// hvis brugeren klikker på alt andet - viser none
-window.onclick = function(event) {
-  if (event.target == popUpBesked) {
-    popUpBesked.style.display = "none";
-  }
-}
