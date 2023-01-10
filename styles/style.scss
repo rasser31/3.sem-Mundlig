@@ -118,11 +118,9 @@ footer {
 
     padding: 3rem;
 
-    h4 {
-        padding: 1rem;
-    }
     h2 {
-        padding: 1rem;
+        padding: 1rem !important;
+        font-size: 2rem !important;
     }
 }
 
@@ -141,9 +139,9 @@ footer {
     //Footer til 425px
     footer {
         flex-direction: column !important;
-        h4 {
-            padding: 0rem;
-            font-size: 1rem;
+        h2 {
+            padding: 0rem !important;
+            font-size: 1rem !important;
         }
     }
 

@@ -106,11 +106,9 @@ footer {
   justify-content: space-evenly;
   padding: 3rem;
 }
-footer h4 {
-  padding: 1rem;
-}
 footer h2 {
-  padding: 1rem;
+  padding: 1rem !important;
+  font-size: 2rem !important;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -122,9 +120,9 @@ footer h2 {
   footer {
     flex-direction: column !important;
   }
-  footer h4 {
-    padding: 0rem;
-    font-size: 1rem;
+  footer h2 {
+    padding: 0rem !important;
+    font-size: 1rem !important;
   }
 }
 @media only screen and (max-width: 425px) {
