@@ -72,8 +72,6 @@ body section .infoBox .triangleInfo {
   padding: 0 !important;
 }
 body section .infoBox .triangleInfo li {
-  -webkit-text-decoration: underline #FFC718;
-          text-decoration: underline #FFC718;
   margin: 1rem;
   font-weight: 600;
 }
