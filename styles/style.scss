@@ -138,16 +138,28 @@ footer {
 @media only screen and (max-width: 425px) {
     //Footer til 425px
     footer {
-        flex-direction: column !important;
         h2 {
             padding: 0rem !important;
             font-size: 1rem !important;
         }
     }
 
-    
+    .videoOverlay {
+        h1{
+            font-size: 1rem !important;
+        }
+
+        p{
+            font-size: 0.8rem !important;
+        }
+    }
 }
 
+@media only screen and (max-width: 512px){
+    footer{
+        flex-direction: column !important;
+    }
+}
 
 @media only screen and (max-width: 425px) {
     .infoBox {

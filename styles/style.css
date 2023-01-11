@@ -117,12 +117,20 @@ footer h2 {
   }
 }
 @media only screen and (max-width: 425px) {
-  footer {
-    flex-direction: column !important;
-  }
   footer h2 {
     padding: 0rem !important;
     font-size: 1rem !important;
+  }
+  .videoOverlay h1 {
+    font-size: 1rem !important;
+  }
+  .videoOverlay p {
+    font-size: 0.8rem !important;
+  }
+}
+@media only screen and (max-width: 512px) {
+  footer {
+    flex-direction: column !important;
   }
 }
 @media only screen and (max-width: 425px) {

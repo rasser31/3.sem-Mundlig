@@ -2,13 +2,27 @@
 var x = 0;
 function marginExpand(){
     if(x == 0){
+        document.getElementById("vidOverlay", "infoBox").style.marginTop="80px";
+        x = 0;
+    } else {
         document.getElementById("vidOverlay").style.marginTop="464px";
         x = 1;
-    } else {
-        document.getElementById("vidOverlay", "infoBox").style.marginTop="80px"
-        x = 0;
     }
 }
+
+var vidX = window.matchMedia("(max-width: 375px)")
+var vidX = 0;
+function marginExpandMedia() {
+    if(vidX == 0){
+        document.getElementById("vidOverlay").style.marginTop="464px";
+        vidX = 1;
+    } else {
+        document.getElementById("vidOverlay", "infoBox").style.marginTop="80px";
+        vidX = 0;
+    }
+}
+
+
 
 // MAPS Kontakt os
 //google maps api
